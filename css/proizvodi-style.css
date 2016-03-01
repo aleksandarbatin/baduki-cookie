@@ -1,0 +1,50 @@
+
+/* ===========================
+--- General sections
+============================ */
+
+.home-section {
+    padding-top:140px;
+    padding-bottom: 30px;
+	display:block;
+    position: relative;
+    z-index:120;
+	background: rgb(251,251,251);
+}
+
+#pronaslov{
+	margin-bottom:20px;
+}
+
+
+/* ===========================
+--- Services
+============================ */
+
+#pronaslov{
+	margin-top:20px;
+}
+.proh2{
+	float:left;
+	font-size:1.5em;
+	padding-left:0px;
+	border-bottom:1px solid #666666;
+	margin-left:20px;
+	margin-bottom:0px;
+}	
+
+#proizvodi {
+	list-style:none;
+	text-align:left;
+	padding-top:0px;
+	padding-bottom:10px;
+	float:left;
+	margin-left:-30px;;
+}
+#proizvodi li {
+	padding:10px 10px;
+	
+}
+#proizvodi a:hover{
+    border-bottom: 1px solid #006666;
+}
