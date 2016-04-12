@@ -820,7 +820,7 @@ Parallax
 }
 @media (min-width: 768px){
   .container {
-    width: auto;
+    width: 1200px;
   }
 }
 
@@ -947,7 +947,7 @@ Parallax
   }
   
   .navbar-custom.navbar-fixed-top.top-nav-collapse {
-  height: auto;
+  height: auto; 
   }
  
   .navbar-custom.navbar-fixed-top.top-nav-collapse {
