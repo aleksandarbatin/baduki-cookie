@@ -35,6 +35,17 @@
 		});
 	});
 
+
+	$(function() {
+		var $submenuLink = $('.proh2');
+		var $subcategoryContent = $('#proizvodi')
+
+		$submenuLink.on('click', function() {
+			$subcategoryContent.toggleClass('show'); /* hide and show menu*/
+		});
+	});
+
+
 })(jQuery);
 
 

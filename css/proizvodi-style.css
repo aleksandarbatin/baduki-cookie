@@ -31,6 +31,11 @@
 	border-bottom:1px solid #666666;
 	margin-left:20px;
 	margin-bottom:0px;
+}
+
+.proh2 span {
+	display: none;
+    font-family: none;
 }	
 
 #proizvodi {
@@ -47,4 +52,23 @@
 }
 #proizvodi a:hover{
     border-bottom: 1px solid #006666;
+}
+
+@media (max-width:768px) {
+	
+	.proh2 span {
+	display: inline-block;
+	}	
+
+}
+
+@media (max-width:480px) {
+	.home-section {
+    padding-top:100px;
+	}
+
+	.proh2 {
+		margin-left: 0;
+	}
+
 }

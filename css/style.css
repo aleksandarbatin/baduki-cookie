@@ -61,6 +61,12 @@ a:focus {
     color: #176e61;
 }
 
+.container-uniq {
+  max-width:1200px;
+  width:90%;
+  margin:0 auto;
+}
+
 .light {
     font-weight: 400;
 }
@@ -324,6 +330,74 @@ hr {
 
 #about-button {
   display: none;
+}
+/* ===========================
+--- Keksici
+============================ */
+
+.home-section {
+    padding-top:140px;
+    padding-bottom: 30px;
+  display:block;
+    position: relative;
+    z-index:120;
+  background: rgb(251,251,251);
+}
+
+#pronaslov{
+  margin-bottom:20px;
+}
+
+#pronaslov{
+  margin-top:20px;
+}
+.proh2{
+  float:left;
+  font-size:1.5em;
+  padding-left:0px;
+  border-bottom:1px solid #666666;
+  margin-left:20px;
+  margin-bottom:0px;
+}
+
+.proh2 span {
+  display: none;
+    font-family: none;
+} 
+
+#proizvodi {
+  list-style:none;
+  text-align:left;
+  padding-top:0px;
+  padding-bottom:10px;
+  float:left;
+  margin-left:-30px;;
+}
+#proizvodi li {
+  padding:10px 10px;
+  
+}
+#proizvodi a:hover{
+    border-bottom: 1px solid #006666;
+}
+
+@media (max-width:768px) {
+  
+  .proh2 span {
+  display: inline-block;
+  } 
+
+}
+
+@media (max-width:480px) {
+  .home-section {
+    padding-top:100px;
+  }
+
+  .proh2 {
+    margin-left: 0;
+  }
+
 }
 
 
@@ -787,6 +861,26 @@ Parallax
 ---  RESPOSIVNES
 ============================ */
 
+@media(max-width:1200px) {
+
+  .featurette-divider {
+    margin: 50px 0;
+  }
+
+  .featurette-image.pull-left {
+    margin-right: 20px;
+  }
+
+  .featurette-image.pull-right {
+    margin-left: 20px;
+  }
+
+  .featurette-heading {
+    font-size: 35px;
+  }
+
+}
+
 @media(max-width:1024px) {
   #biglogo {
     width:195px;
@@ -817,11 +911,6 @@ Parallax
     background-color: transparent;
   }
   
-}
-@media (min-width: 768px){
-  .container {
-    width: 1200px;
-  }
 }
 
 @media(min-width:767px) {
@@ -860,7 +949,11 @@ Parallax
   }
 
 }
-
+@media (max-width: 880px) {
+  .nav>li>a {
+    padding: 12px 18px;
+  }
+}
 
 @media (max-width:768px) {
 
@@ -872,15 +965,12 @@ Parallax
     margin-bottom: 30px;
   }
   #biglogo {
-       width:160px;
+    width:160px;
+    margin-top: 6px;
   }
   .navbar-brand {
   height:95px;
   padding: 0px 10px 0px 20px;
-  }
-
-  .nav>li>a {
-    padding: 12px 18px;
   }
 
   .navbar-custom.top-nav-collapse .nav.navbar-nav {
@@ -902,12 +992,23 @@ Parallax
     margin-top: 0px;
   }
 
+  .navbar-custom.navbar-fixed-top.top-nav-collapse .navbar-toggle .fa-2x {
+    color:white;
+  }
+
   .fa-2x {
-    font-size: 4em;
+    font-size: 3.5em;
+  }
+  
+  #heder-k .navbar-toggle {
+    color:rgba(111, 71, 31,.8);;
   }
 
   .navbar-toggle {
     padding: 13px 15px;
+  }
+  #proizvodi {
+    display: none;
   }
 }
 
@@ -930,7 +1031,7 @@ Parallax
   
   #biglogo {
     width: 115px;
-    margin-top: 10px;
+    margin-top: 7px;
   }
   
   .navbar-custom.navbar-fixed-top.top-nav-collapse .logomini {
@@ -947,7 +1048,7 @@ Parallax
   }
   
   .navbar-custom.navbar-fixed-top.top-nav-collapse {
-  height: auto; 
+  height: 81px; 
   }
  
   .navbar-custom.navbar-fixed-top.top-nav-collapse {
@@ -1014,10 +1115,10 @@ Parallax
     font-size: 20px;
   }
 
-  .home-section {
+  /*.home-section {
     padding-top: 20px;
     padding-bottom: 20px;
-  }
+  }*/
 
   .bounceInDown{
     display: none;
@@ -1060,25 +1161,7 @@ Parallax
 
 }
 
-@media(max-width:1200px) {
 
-  .featurette-divider {
-    margin: 50px 0;
-  }
-
-  .featurette-image.pull-left {
-    margin-right: 20px;
-  }
-
-  .featurette-image.pull-right {
-    margin-left: 20px;
-  }
-
-  .featurette-heading {
-    font-size: 35px;
-  }
-
-}
 
 @media(max-width:991px) {
    
@@ -1119,4 +1202,10 @@ Parallax
     .featurette-divider {
         margin: 30px 0;
     }
+}
+
+@media(max-width: 375px) {
+  .fa-2x {
+    font-size: 2.5em;
+  }
 }
