@@ -71,6 +71,10 @@ a:focus {
     font-weight: 400;
 }
 
+/*======================
+----- NAVIGATION
+=======================*/
+
 
 .navbar {
     margin-bottom: 0;
@@ -82,17 +86,10 @@ a:focus {
 }
 .navbar-brand {
 	height: 131px;
-	padding: 0px 10px 0px 15px;
+	padding: 0px 10px 0px 0px;
 	font-size: 18px;
   line-height: 1em;
 }
-/*=== Mobile heading invisible=== */
-
-.mobile-heading {
-  display: none;
-}
-
-/*=== End of mobile heading ==*/
 
 .logomini {
 	background-color:rgba(111, 71, 31,.8);
@@ -223,6 +220,14 @@ a:focus {
     outline: 0;
 }
 
+/*=== Mobile heading invisible=== */
+
+.mobile-heading {
+  display: none;
+}
+
+/*=== End of mobile heading ==*/
+
 
 #loaderInner {
     background:#ffffff url(../img/spinner.gif) center center no-repeat;
@@ -286,7 +291,7 @@ hr {
 .marginbot-50{margin-bottom:20px !important;}
 
 /* ===========================
---- General sections
+--- SERVICE 
 ============================ */
 
 .home-section {
@@ -331,16 +336,21 @@ hr {
 #about-button {
   display: none;
 }
+
+.service-icon {
+  margin-bottom: 20px;
+}
+
+#service-view {
+  padding-top: 140px;
+  padding-bottom: 30px;
+} 
+
 /* ===========================
 --- Keksici
 ============================ */
 
 .home-section {
-    padding-top:140px;
-    padding-bottom: 30px;
-  display:block;
-    position: relative;
-    z-index:120;
   background: rgb(251,251,251);
 }
 
@@ -373,10 +383,12 @@ hr {
   float:left;
   margin-left:-30px;;
 }
+
 #proizvodi li {
   padding:10px 10px;
   
 }
+
 #proizvodi a:hover{
     border-bottom: 1px solid #006666;
 }
@@ -391,7 +403,11 @@ hr {
 
 @media (max-width:480px) {
   .home-section {
-    padding-top:100px;
+    padding-top:100px!important;
+  }
+
+  #about {
+    padding-top:50px!important;
   }
 
   .proh2 {
@@ -464,13 +480,6 @@ hr {
     z-index:120;
 }
 
-/* ===========================
---- Services
-============================ */
-
-.service-icon {
-	margin-bottom: 20px;
-}	
 
 
 /* ===========================
@@ -969,12 +978,8 @@ Parallax
     margin-top: 6px;
   }
   .navbar-brand {
-  height:95px;
+  height:60px;
   padding: 0px 10px 0px 20px;
-  }
-
-  .navbar-custom.top-nav-collapse .nav.navbar-nav {
-    margin-top: 11px;
   }
 
   .home-section {
@@ -1010,6 +1015,54 @@ Parallax
   #proizvodi {
     display: none;
   }
+
+  .navbar-custom .nav.navbar-nav {
+    background-color: rgba(255,255,255,25.4);
+    margin-top: 12px;
+  }
+
+  .navbar-nav>li>a {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: 15px;
+  }
+
+  .navbar-custom ul.nav ul.dropdown-menu li a {
+    text-align: center;
+  }
+
+  .navbar-custom.top-nav-collapse .nav.navbar-nav {
+    background-color:rgba(255,255,255,25.4) ;
+  }
+
+  .navbar-custom.top-nav-collapse ul.nav li a {
+  color: #444;
+  }
+
+  .hovereffect .overlay {
+    overflow: visible;
+    -webkit-transition: none; 
+    transition: none; 
+    -webkit-transform: none; 
+    -ms-transform: none;
+    transform: none; 
+  }
+
+  .hovereffect p {
+    opacity: 1;
+    filter: alpha(opacity=0);
+    -webkit-transition: none; 
+    transition: none; 
+    -webkit-transform: none; 
+    transform: none; 
+  }
+
+  .blog-news-archive .col-md-5 {
+    margin-top: 20px;
+  }
 }
 
 @media (max-width:480px) {
@@ -1017,11 +1070,6 @@ Parallax
   .fill {
     background-position: center;
     background-size:cover;
-  }
-
-  .navbar-custom .nav.navbar-nav {
-    background-color: rgba(255,255,255,25.4);
-    margin-top: 0px;
   }
 
   .navbar-custom.top-nav-collapse .nav.navbar-nav {
@@ -1071,15 +1119,6 @@ Parallax
   .navbar.navbar-custom.navbar-fixed-top {
     margin-bottom: 0px;
   }
-  
-  .navbar-nav>li>a {
-    text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 0px;
-    padding-right: 0px;
-    line-height: 15px;
-  }
 
   .navbar-toggle {
     padding: 8px 5px;
@@ -1103,6 +1142,10 @@ Parallax
   
   .tp-banner-container {
     padding-top:40px;
+  }
+
+  .navbar-custom .nav.navbar-nav {
+    margin-top: 0px;
   }
 
   .page-scroll a.btn-circle {
